@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap multilíngue. Cada URL declara TODAS as versões de idioma, inclusive
+  a própria, mais um x-default — é o formato que o Google exige para tratar
+  as duas páginas como alternativas da mesma coisa em vez de concorrentes
+  pelo mesmo termo. Espelha os `hreflang` emitidos em app/pagina/pagina.ts.
+
+  Ao adicionar um idioma, este arquivo precisa mudar junto: ele é estático,
+  servido de public/, e nada no build o regenera.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://dixavier27.com.br/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dixavier27.com.br/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dixavier27.com.br/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dixavier27.com.br/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://dixavier27.com.br/en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dixavier27.com.br/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dixavier27.com.br/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dixavier27.com.br/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>

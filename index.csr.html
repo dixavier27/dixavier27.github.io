@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR" data-beasties-container="">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Google tag (gtag.js) — Google Analytics 4, propriedade G-L127FMZQBV.
+       Fica aqui, e não em `pagina.ts`, porque precisa carregar em todas as
+       rotas prerenderizadas (/ e /en) sem depender do Angular subir. Uma tag
+       só por página: não adicionar um segundo gtag/GTM em lugar nenhum. -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L127FMZQBV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-L127FMZQBV');
+  </script>
+
+  <title>Affonso Xavier — Engenheiro de Software Pleno | Full Stack (remoto)</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Affonso Xavier (@dixavier27) — Engenheiro de software full stack, disponível para vagas remotas ou contratação de serviço. Responsável técnico de um CRM em microsserviços desde 2024 (TypeScript, Angular, Node.js): o time caiu de 3 desenvolvedores para 1 e a entrega acelerou — deploys de quinzenais para 2x por semana. Produto autoral com 250+ usuários diários e mais de uma década em desenvolvimento web. Manaus, AM (UTC−4).">
+  <meta name="author" content="Affonso Xavier">
+
+  <!-- O SVG é o ícone real (responde ao tema do navegador e escala sem borrar);
+       o .ico e o PNG existem para quem não suporta SVG em favicon. -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Pinta a barra do navegador no Android/Chrome com a cor da marca. -->
+  <meta name="theme-color" content="#002147" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+
+  <!-- title, description, canonical, hreflang, og:* e o `lang` do <html> são
+       reescritos por rota em `app/pagina/pagina.ts` e serializados no HTML
+       prerenderizado de cada idioma. Os valores abaixo são o fallback de `/`;
+       editar aqui NÃO muda o que /en serve — o conteúdo vive em
+       `app/conteudo/{pt,en}.ts`. -->
+  <link rel="canonical" href="https://dixavier27.com.br/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Affonso Xavier — Engenheiro de Software Pleno | Full Stack">
+  <meta property="og:description" content="TypeScript, Angular, Node.js, microsserviços e orquestração de agentes de IA. Time de 3 devs para 1 sem queda na entrega — deploys de quinzenais para 2x por semana; produto autoral com 250+ usuários diários. Disponível para vagas remotas ou contratação de serviço.">
+  <meta property="og:image" content="https://dixavier27.com.br/og-pt.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Affonso Xavier — Engenheiro de Software Full Stack. Entrego de ponta a ponta, com orquestração de agentes de IA.">
+  <meta property="og:url" content="https://dixavier27.com.br/">
+  <meta property="og:site_name" content="Affonso Xavier @dixavier27">
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Affonso Xavier — Engenheiro de Software Pleno | Full Stack">
+  <meta name="twitter:description" content="TypeScript, Angular, Node.js, microsserviços e agentes de IA. Disponível para vagas remotas ou contratação de serviço.">
+  <meta name="twitter:image" content="https://dixavier27.com.br/og-pt.png">
+
+  <!-- Os dados estruturados (JSON-LD Person) sao injetados por rota em
+       `app/pagina/pagina.ts`, a partir de `app/conteudo/{pt,en}.ts` - fixa-los
+       aqui faria o `jobTitle` em portugues vazar para /en. -->
+<style>@font-face{font-family:Space Mono;font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/spacemono/v17/i7dNIFZifjKcF5UAWdDRYERMSHK_IwU.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Space Mono;font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/spacemono/v17/i7dNIFZifjKcF5UAWdDRYERMSXK_IwU.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Space Mono;font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/spacemono/v17/i7dNIFZifjKcF5UAWdDRYERMR3K_.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Space Mono;font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/spacemono/v17/i7dSIFZifjKcF5UAWdDRYERE_FeqEySRV3U.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Space Mono;font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/spacemono/v17/i7dSIFZifjKcF5UAWdDRYERE_FeqEiSRV3U.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Space Mono;font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/spacemono/v17/i7dSIFZifjKcF5UAWdDRYERE_FeqHCSR.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Space Mono;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/spacemono/v17/i7dPIFZifjKcF5UAWdDRYE58RWq7.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Space Mono;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/spacemono/v17/i7dPIFZifjKcF5UAWdDRYE98RWq7.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Space Mono;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/spacemono/v17/i7dPIFZifjKcF5UAWdDRYEF8RQ.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Space Mono;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/spacemono/v17/i7dMIFZifjKcF5UAWdDRaPpZUFqaHjyV.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Space Mono;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/spacemono/v17/i7dMIFZifjKcF5UAWdDRaPpZUFuaHjyV.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Space Mono;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/spacemono/v17/i7dMIFZifjKcF5UAWdDRaPpZUFWaHg.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}:root{--color-bg:#f8f9fa;--color-fg:#1a1a1a;--color-muted:#6c757d;--color-border:#dee2e6;--color-accent:#002147}*{box-sizing:border-box}body{margin:0;background-color:var(--color-bg);color:var(--color-fg);font-family:Space Mono,monospace}</style><link rel="stylesheet" href="styles-7IDIDYWG.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-7IDIDYWG.css"></noscript></head>
+<body ngcm="">
+  <app-root></app-root>
+<script src="main-K2ESHRRP.js" type="module"></script></body>
+</html>

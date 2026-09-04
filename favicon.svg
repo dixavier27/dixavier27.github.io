@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Affonso Xavier">
+  <!--
+    d20 em arame — hexágono externo, face triangular central e três raios,
+    com os vértices marcados. É a projeção frontal de um icosaedro: lê como
+    o poliedro do vídeo do Hero e, ao mesmo tempo, como o dado de 20 lados,
+    que amarra o Inner Circle (RPG de mesa) à identidade.
+
+    Restrição que define a espessura: a 16px, traço abaixo de ~1px vira
+    borrão cinza. Com `stroke-width: 4` no espaço de 64, o traço rasteriza
+    em 1px a 16px e 2px a 32px — no limite do legível, sem engrossar a ponto
+    de fechar os triângulos.
+
+    Os pontos de vértice desaparecem a 16px (viram sub-pixel) e aparecem de
+    32px para cima. É aceitável: a silhueta hexagonal com o triângulo dentro
+    já identifica a marca sozinha, e 16px é o único tamanho onde isso ocorre.
+
+    O SVG responde ao tema do navegador: em modo escuro o azul prússia
+    (#002147) sumiria contra a barra de abas, então o ladrilho clareia.
+  -->
+  <style>
+    .tile { fill: #002147; }
+    .wire { fill: none; stroke: #f8f9fa; stroke-width: 4; stroke-linejoin: round; stroke-linecap: round; }
+    .vert { fill: #f8f9fa; }
+    @media (prefers-color-scheme: dark) {
+      .tile { fill: #f8f9fa; }
+      .wire { stroke: #002147; }
+      .vert { fill: #002147; }
+    }
+  </style>
+
+  <rect class="tile" width="64" height="64" rx="12"/>
+
+  <g class="wire">
+    <!-- Silhueta hexagonal do d20 visto de frente. -->
+    <path d="M32 8 L53 20 L53 44 L32 56 L11 44 L11 20 Z"/>
+    <!-- Face triangular central. -->
+    <path d="M32 20 L43 38 L21 38 Z"/>
+    <!-- Raios ligando a face central aos vértices alternados. -->
+    <path d="M32 20 L32 8"/>
+    <path d="M21 38 L11 44"/>
+    <path d="M43 38 L53 44"/>
+  </g>
+
+  <g class="vert">
+    <circle cx="32" cy="8" r="3.6"/>
+    <circle cx="53" cy="20" r="3.6"/>
+    <circle cx="53" cy="44" r="3.6"/>
+    <circle cx="32" cy="56" r="3.6"/>
+    <circle cx="11" cy="44" r="3.6"/>
+    <circle cx="11" cy="20" r="3.6"/>
+  </g>
+</svg>
