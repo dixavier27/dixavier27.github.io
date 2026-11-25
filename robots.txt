@@ -1,0 +1,7 @@
+# dixavier27.com.br
+# Site pessoal — tudo é público e deve ser indexado.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://dixavier27.com.br/sitemap.xml
